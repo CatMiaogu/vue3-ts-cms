@@ -1,5 +1,8 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+
+import axRequst from './service'
+
 // 引入 element-plus 和index.css 样式文件
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
@@ -12,3 +15,8 @@ app.use(ElementPlus)
 app.use(router)
 app.use(store)
 app.mount('#app')
+
+axRequst.request({
+  url: 'home/multidata',
+  method: 'GET'
+})
