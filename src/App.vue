@@ -1,11 +1,10 @@
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
   <!-- <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" /> -->
-  <h2>作者：{{ $store.state.authorName }}</h2>
+  <!-- <h2>作者：{{ $store.state.authorName }}</h2>
   <router-link to="/login">登录 </router-link>
-  <router-link to="/main">首页</router-link>
+  <router-link to="/main">首页</router-link> -->
   <router-view></router-view>
-  <el-button>测试一下</el-button>
 </template>
 
 <script lang="ts">
